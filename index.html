@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengapa iPhone - Paparan Motivasi</title>
+    <style>
+        :root {
+            --bg-color: #000000;
+            --card-bg: #1c1c1e;
+            --text-primary: #f5f5f7;
+            --text-secondary: #86868b;
+            --accent: #2997ff;
+            --border: #38383a;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin-top: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #ffffff 0%, #a1a1a6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p.subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            color: var(--accent);
+            margin-top: 0;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .card p {
+            line-height: 1.6;
+            color: #d2d2d7;
+            font-size: 1.05rem;
+            margin: 0;
+        }
+
+        .btn-container {
+            display: flex;
+            gap: 10px;
+            margin-top: 30px;
+            justify-content: center;
+        }
+
+        button {
+            background-color: #3a3a3c;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 99px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        button:hover {
+            background-color: #48484a;
+        }
+
+        button.primary {
+            background-color: var(--accent);
+        }
+
+        button.primary:hover {
+            background-color: #0077ed;
+        }
+
+        footer {
+            margin-top: auto;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Mengapa iPhone</h1>
+            <p class="subtitle">Paparan Motivasi & Pilihan Perangkat Harian</p>
+        </header>
+
+        <!-- Paragraf 1 -->
+        <div class="card">
+            <h3>📱 1. Alasan Memilih iPhone</h3>
+            <p> Mengapa aku pilih iPhone karena iPhone memudahkan aku dalam belajar, karna iPad dan iPhone lebih mudah buat menyalurkan data dari device 1 ke device 2. iPhone itu bukan hanya sekedar buat gaya-gayaan, tetapi iPhone itu buat kegiatan sehari-hari lebih enak dibanding Android karna iOS iPhone itu lebih mulus daripada Android, dan iPhone merupakan investasi dalam jangka yang cukup panjang untuk mendukung produktivitas.</p>
+        </div>
+
+        <!-- Paragraf 2 -->
+        <div class="card">
+            <h3>⚡ 2. Kelebihan iPhone Dibanding Android</h3>
+            <p>[cite: 1] Kelebihan iPhone dibanding Android sebenarnya banyak, tapi kelebihan utamanya terletak pada iOS-nya. Sistem operasinya mengelola memori secara cerdas sehingga performa tetap kencang meski dipakai bertahun-tahun. Fitur ekosistem seperti AirDrop membuat proses berbagi tugas dan file menjadi instan, ditambah jaminan pembaruan iOS jangka panjang dan keamanan privasi yang ketat, iPhone menawarkan kenyamanan harian yang lebih konsisten dibanding Android.</p>
+        </div>
+
+        <!-- Paragraf 3 -->
+        <div class="card">
+            <h3>🎯 3. Hal yang Dioptimalkan Saat Menggunakan iPhone</h3>
+            <p>[cite: 1] Hal yang dioptimalkan saat menggunakan iPhone, aku akan mengoptimalkan mode fokus untuk menjaga konsentrasi saat belajar agar tidak ada notif yang masuk. Dan aku juga akan mengoptimalkan kualitas kameranya yang sangat jernih dan smooth untuk membuat video presentasi, serta memaksimalkan fitur keamanannya untuk melindungi seluruh data.</p>
+        </div>
+
+        <div class="btn-container">
+            <button class="primary" onclick="copyText()">Salin Semua Teks</button>
+            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Kembali ke Atas</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Dibuat untuk Keperluan Paparan Motivasi</p>
+    </footer>
+
+    <script>
+        function copyText() {
+            const paragraphs = [
+                "1. Mengapa aku pilih iPhone karena iPhone memudahkan aku dalam belajar, karna iPad dan iPhone lebih mudah buat menyalurkan data dari device 1 ke device 2, iPhone itu bukan hanya sekedar buat gaya gayaan tetapi iPhone itu buat kegiatan sehari hari lebih enak dibanding android karna ios iphone itu lebih mulus daripada android, dan iphone merupakan investasi dalam janga yang cukup panjang untuk mendukung produktivitas",
+                "2. Kelebihan iphone dibanding android sebenarnya banyak tapi kelebihan utama nya terletak pada ios nya iphone Sistem operasinya mengelola memori secara cerdas sehingga performa tetap kencang meski dipakai bertahun-tahun. Fitur ekosistem seperti airDrop membuat proses berbagi tugas dan file menjadi instan, Ditambah jaminan pembaruan iOS jangka panjang dan keamanan privasi yang ketat, iphone menawarkan kenyamanan harian yang lebih konsisten dibanding Android",
+                "3. Hal yang dioptimalkan saat menggunakan iphone, aku akan mengoptimalkan mode fokus untuk menjaga konsentrasi saat belajar agar tidak ada notif yang masuk. Dan aku juga akan mengoptimalkan kualitas kameranya yang sangat jernih dan smooth untuk membuat video presentasi, dan memaksimalkan fitur keamanannya untuk melindungi seluruh data"
+            ].join("\n\n");
+
+            navigator.clipboard.writeText(paragraphs).then(() => {
+                alert("Berhasil menyalin seluruh teks esai!");
+            }).catch(err => {
+                alert("Gagal menyalin teks.");
+            });
+        }
+    </script>
+
+</body>
+</html>
